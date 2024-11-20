@@ -18,7 +18,7 @@ async def on_ready() -> None:
     # Get bot owner name, and declare the variable for use in other functions
     app_info = await bot.application_info()
     global bot_owner_name
-    bot_owner_name = app_info.owner.name  # Get the owner's username
+    bot_owner_name = app_info.owner.name  # Get the owners username
 
     print(
         f"Bot is ready, invite link: https://discord.com/api/oauth2/authorize?client_id={bot.user.id}&permissions=8&scope=bot"
